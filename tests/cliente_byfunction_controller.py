@@ -3,10 +3,10 @@ from tests.cliente_byfunction_entity import ClienteByfunctionEntity
 from tests.cliente_byfunction_insert_function_type import (
     ClienteByfunctionInsertType,
 )
-from nsj_rest_lib.settings import application, APP_NAME, MOPE_CODE
+from rest_lib.settings import application, APP_NAME, MOPE_CODE
 
-from nsj_rest_lib.controller.list_route import ListRoute
-from nsj_rest_lib.controller.post_route import PostRoute
+from rest_lib.controller.list_route import ListRoute
+from rest_lib.controller.post_route import PostRoute
 
 LIST_POST_ROUTE = f"/{APP_NAME}/{MOPE_CODE}/clientes-by-function"
 

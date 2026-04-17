@@ -8,15 +8,15 @@ for path in (SRC_ROOT, REPO_ROOT):
     if str(path) not in sys.path:
         sys.path.insert(0, str(path))
 
-from nsj_rest_lib.controller.get_route import GetRoute
-from nsj_rest_lib.controller.list_route import ListRoute
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.decorator.entity import Entity
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.descriptor.entity_field import EntityField
-from nsj_rest_lib.dto.dto_base import DTOBase
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.settings import application
+from rest_lib.controller.get_route import GetRoute
+from rest_lib.controller.list_route import ListRoute
+from rest_lib.decorator.dto import DTO
+from rest_lib.decorator.entity import Entity
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.descriptor.entity_field import EntityField
+from rest_lib.dto.dto_base import DTOBase
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.settings import application
 
 
 class FakeInjectorFactory:

@@ -2,21 +2,21 @@
 
 from unittest.mock import Mock
 
-from nsj_rest_lib.dao.dao_base_util import DAOBaseUtil
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.decorator.entity import Entity
-from nsj_rest_lib.descriptor.dto_aggregator import DTOAggregator
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.descriptor.dto_list_field import DTOListField
-from nsj_rest_lib.descriptor.dto_one_to_one_field import (
+from rest_lib.dao.dao_base_util import DAOBaseUtil
+from rest_lib.decorator.dto import DTO
+from rest_lib.decorator.entity import Entity
+from rest_lib.descriptor.dto_aggregator import DTOAggregator
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.descriptor.dto_list_field import DTOListField
+from rest_lib.descriptor.dto_one_to_one_field import (
     DTOOneToOneField,
     OTORelationType,
 )
-from nsj_rest_lib.descriptor.filter_operator import FilterOperator
-from nsj_rest_lib.dto.dto_base import DTOBase
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.entity.filter import Filter
-from nsj_rest_lib.service.service_base import ServiceBase
+from rest_lib.descriptor.filter_operator import FilterOperator
+from rest_lib.dto.dto_base import DTOBase
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.entity.filter import Filter
+from rest_lib.service.service_base import ServiceBase
 
 
 @DTO()

@@ -1,12 +1,12 @@
 from unittest.mock import Mock
 
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.descriptor.dto_list_field import DTOListField
-from nsj_rest_lib.descriptor.dto_object_field import DTOObjectField, EntityRelationOwner
-from nsj_rest_lib.dto.dto_base import DTOBase
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.service.service_base import ServiceBase
+from rest_lib.decorator.dto import DTO
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.descriptor.dto_list_field import DTOListField
+from rest_lib.descriptor.dto_object_field import DTOObjectField, EntityRelationOwner
+from rest_lib.dto.dto_base import DTOBase
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.service.service_base import ServiceBase
 
 
 class TelefoneEntity(EntityBase):

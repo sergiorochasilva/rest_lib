@@ -32,7 +32,7 @@ Você pode ver a especificação arquitetura aprovada [aqui](https://github.com/
 
 ### 1. Importe o decorator:
 ```
-from nsj_rest_lib.decorator.opentelemetry import OpenTelemetry
+from rest_lib.decorator.opentelemetry import OpenTelemetry
 ```
 ### 2. Decorar a rota da sua API:
 Exemplo completo com DTO:

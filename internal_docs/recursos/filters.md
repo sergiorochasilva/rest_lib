@@ -1,4 +1,4 @@
-# [Filter](../../src/nsj_rest_lib/entity/filter.py)
+# [Filter](../../src/rest_lib/entity/filter.py)
 A classe `Filter` é uma representação de um filtro que pode ser aplicado a uma consulta em um banco de dados, ou a uma coleção de dados. Um filtro é composto por um FilterOperator e um valor que será usado para realizar a comparação.
 
 Por padrão, todos os campos declarados num DTO (pelos descritores DTOField e DTOSQLJoinField) são passíveis de filtro, bastando adicionar na URL de GET: ```<nome_do_campo>=<valor>```. Mas, esse tipo de filtro está restrito à comparação de igualdade.
@@ -20,7 +20,7 @@ NOT_NULL = "not_null"
 
 **Exemplo:**
 ```
-from nsj_rest_lib.entity.filter import Filter, FilterOperator
+from rest_lib.entity.filter import Filter, FilterOperator
 
 Filter(FilterOperator.GREATER_THAN, 'criado_apos')
 ```

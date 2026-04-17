@@ -1,18 +1,18 @@
 import uuid
 
 from typing import List
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.descriptor.conjunto_type import ConjuntoType
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.dto.dto_base import DTOBase
+from rest_lib.decorator.dto import DTO
+from rest_lib.descriptor.conjunto_type import ConjuntoType
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.dto.dto_base import DTOBase
 
-from nsj_rest_lib.decorator.entity import Entity
+from rest_lib.decorator.entity import Entity
 
-from nsj_rest_lib.dao.dao_base import DAOBase
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.exception import NotFoundException
-from nsj_rest_lib.service.service_base import ServiceBase
-from nsj_rest_lib.util.join_aux import JoinAux
+from rest_lib.dao.dao_base import DAOBase
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.exception import NotFoundException
+from rest_lib.service.service_base import ServiceBase
+from rest_lib.util.join_aux import JoinAux
 
 
 @DTO()

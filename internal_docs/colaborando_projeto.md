@@ -17,7 +17,7 @@ docker-compose up -d postgres
         "request": "launch",
         "module": "flask",
         "env": {
-            "FLASK_APP": "src/nsj_rest_lib/wsgi.py",
+            "FLASK_APP": "src/rest_lib/wsgi.py",
             "FLASK_DEBUG": "1"
         },
         "args": [
@@ -46,11 +46,11 @@ A ideia aqui, é que, quando queremos melhorar o RestiLib, é bom testar os efei
 Para rodar a biblioteca localmente, após a configuração da sua aplicação principal, siga os passos:
 
 1. Clone a biblioteca:
-`git clone git@github.com:Nasajon/nsj_rest_lib.git`
+`git clone git@github.com:Nasajon/rest_lib.git`
 2. Desinstale a biblioteca no seu ambiente virtual da aplicação:
-`pip uninstall nsj-rest-lib`
+`pip uninstall rest-lib`
 3. Na variável de ambiente PYTHONPATH localizado no .env da aplicação principal, coloque o caminho da biblioteca após o caminho da aplicação, entre :
-`PYTHONPATH=/home/@work/dados-mestre-api:/home/@work/nsj_rest_lib/src`
+`PYTHONPATH=/home/@work/dados-mestre-api:/home/@work/rest_lib/src`
 
 ## Criação dos testes
 Para a criação dos casos de testes de forma automática pode seguir o exemplo ["Criação de caso de teste"](https://github.com/Nasajon/nsj-rest-test-util#cria%C3%A7%C3%A3o-de-caso-de-teste).
@@ -103,4 +103,3 @@ src/
 │   │   │   ├── dump_sql/
 │   │   │   │   ├── global.sql             
 ```
-

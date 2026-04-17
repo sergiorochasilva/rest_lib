@@ -76,13 +76,13 @@ Nesse caso, estaríamos recuperando a empresa com ID "13485926000166", trazendo 
 
 Esse passo a passo pressupõe que sua aplicação já utiliza o RestLib para expôr APIs Rest.
 
-1. Atualize a versão do NsjRestLib do seu projeto, no mínimo para `nsj_rest_lib==2.9.0`.
+1. Atualize a versão do NsjRestLib do seu projeto, no mínimo para `rest_lib==2.9.0`.
 2. Atualize a versão do MultiDatabaseLib para, no mínimo: `nsj-multi-database-lib==1.1.0`.
 3. Crie um arquivo `cli.py` em sua aplicação, conforme o exemplo abaixo. Esse arquivo será o ponto de entrada para execução de sua aplicação em linha de comando:
 
 ```python
 # Importando o "cli" padrão no RestLib
-from nsj_rest_lib.cli import main
+from rest_lib.cli import main
 
 # TODO Esse import precisa ser por projeto (para que todas as rotas sejam declaradas)
 from nasajon import wsgi
@@ -136,7 +136,7 @@ def get_empresa_erp3(_, response):
 
 ### Execução das rotas como comandos
 
-1. Ao se executar o método `main` do módulo `nsj_rest_lib.cli`, esse método irá procurar pelos argumentos da linha de comando, bem como decodificar o json recebido em formato base64.
+1. Ao se executar o método `main` do módulo `rest_lib.cli`, esse método irá procurar pelos argumentos da linha de comando, bem como decodificar o json recebido em formato base64.
 2. Em seguida, já no método `internal_main`, as variáveis de ambiente abaixo serão forçosamente sobrescritas:
 
 * `ENV = erp_sql`

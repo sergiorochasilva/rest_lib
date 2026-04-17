@@ -1,4 +1,4 @@
-### [EntityBase](src/nsj_rest_lib/entity/entity_base.py)
+### [EntityBase](src/rest_lib/entity/entity_base.py)
 `EntityBase` é uma classe abstrata genérica para representar entidades no banco de dados. Ele fornece um modelo flexível para criar classes de entidade específicas. As subclasses devem herdar desta classe e implementar os métodos para configurar os detalhes da tabela no banco de dados.
 
 <!-- #### Atributos:
@@ -27,7 +27,7 @@
 TODO: Adicionar uso do decorator
 
 ```
-from nsj_rest_lib.entity.entity_base import EntityBase
+from rest_lib.entity.entity_base import EntityBase
 
 class ClienteEntity(EntityBase):
     id: str

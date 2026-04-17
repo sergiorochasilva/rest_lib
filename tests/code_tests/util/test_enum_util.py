@@ -1,6 +1,6 @@
 import enum
 
-from nsj_rest_lib.util.enum_util import coerce_enum_value, enum_to_primitive_value
+from rest_lib.util.enum_util import coerce_enum_value, enum_to_primitive_value
 
 
 class TupleEnum(enum.Enum):

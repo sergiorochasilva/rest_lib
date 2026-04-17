@@ -1,10 +1,10 @@
 import uuid
 
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.descriptor.dto_field_validators import DTOFieldValidators
-from nsj_rest_lib.descriptor.dto_list_field import DTOListField
-from nsj_rest_lib.dto.dto_base import DTOBase
+from rest_lib.decorator.dto import DTO
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.descriptor.dto_field_validators import DTOFieldValidators
+from rest_lib.descriptor.dto_list_field import DTOListField
+from rest_lib.dto.dto_base import DTOBase
 
 from tests.cliente_byfunction_endereco_dto import ClienteByfunctionEnderecoDTO
 from tests.cliente_byfunction_endereco_entity import (

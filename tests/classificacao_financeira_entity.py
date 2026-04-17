@@ -1,9 +1,9 @@
 import datetime
 import uuid
 
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.decorator.entity import Entity
-from nsj_rest_lib.descriptor.entity_field import EntityField
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.decorator.entity import Entity
+from rest_lib.descriptor.entity_field import EntityField
 
 
 @Entity(

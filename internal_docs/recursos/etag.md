@@ -3,10 +3,10 @@
 Este recurso adiciona suporte a ETag nas rotas de GET por ID.
 
 Arquivos relacionados:
-- [get_route](src/nsj_rest_lib/controller/get_route.py)
-- [route_base](src/nsj_rest_lib/controller/route_base.py)
-- [dto_decorator](src/nsj_rest_lib/decorator/dto.py)
-- [dto](src/nsj_rest_lib/dto/dto_base.py)
+- [get_route](src/rest_lib/controller/get_route.py)
+- [route_base](src/rest_lib/controller/route_base.py)
+- [dto_decorator](src/rest_lib/decorator/dto.py)
+- [dto](src/rest_lib/dto/dto_base.py)
 
 ## Como habilitar
 - Configure o decorator `DTO` com `etag_fields` e, se necessario, `etag_type`.
@@ -20,9 +20,9 @@ Arquivos relacionados:
 
 Exemplo:
 ```python
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.dto.dto_base import DTOBase
+from rest_lib.decorator.dto import DTO
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.dto.dto_base import DTOBase
 
 @DTO(etag_fields={"version", "updated_at"}, etag_type="HASH")
 class ClienteDTO(DTOBase):

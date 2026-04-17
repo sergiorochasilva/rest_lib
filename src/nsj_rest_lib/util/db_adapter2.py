@@ -1,1 +1,0 @@
-from nsj_gcf_utils.db_adapter2 import DBAdapter2

@@ -1,10 +1,10 @@
 # Controllers
 
-## [get_route](src/nsj_rest_lib/controller/get_route.py)
+## [get_route](src/rest_lib/controller/get_route.py)
 
 **Exemplo:**
 ```
-from nsj_rest_lib.controller.get_route import GetRoute
+from rest_lib.controller.get_route import GetRoute
 
 @GetRoute(
     url=GET_ROUTE,
@@ -14,10 +14,10 @@ from nsj_rest_lib.controller.get_route import GetRoute
 )
 ```
 
-## [list_route](src/nsj_rest_lib/controller/list_route.py)
+## [list_route](src/rest_lib/controller/list_route.py)
 ***Exemplo:***
 ```
-from nsj_rest_lib.controller.list_route import ListRoute
+from rest_lib.controller.list_route import ListRoute
 
 @ListRoute(
     url=LIST_ROUTE,
@@ -27,10 +27,10 @@ from nsj_rest_lib.controller.list_route import ListRoute
 )
 ```
 
-## [post_route](src/nsj_rest_lib/controller/post_route.py)
+## [post_route](src/rest_lib/controller/post_route.py)
 ***Exemplo:***
 ```
-from nsj_rest_lib.controller.post_route import PostRoute
+from rest_lib.controller.post_route import PostRoute
 
 @PostRoute(
     url=LIST_POST_ROUTE,
@@ -41,10 +41,10 @@ from nsj_rest_lib.controller.post_route import PostRoute
 )
 ```
 
-## [put_route](src/nsj_rest_lib/controller/put_route.py)
+## [put_route](src/rest_lib/controller/put_route.py)
 ***Exemplo:***
 ```
-from nsj_rest_lib.controller.put_route import PutRoute
+from rest_lib.controller.put_route import PutRoute
 
 @PutRoute(
     url=GET_PUT_ROUTE,
@@ -54,10 +54,10 @@ from nsj_rest_lib.controller.put_route import PutRoute
 )
 ```
 
-## [delete_route](src/nsj_rest_lib/controller/delete_route.py)
+## [delete_route](src/rest_lib/controller/delete_route.py)
 ***Exemplo:***
 ```
-from nsj_rest_lib.controller.delete_route import DeleteRoute
+from rest_lib.controller.delete_route import DeleteRoute
 
 @DeleteRoute(
     url=GET_DELETE_ROUTE,

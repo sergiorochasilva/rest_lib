@@ -1,5 +1,5 @@
 # DTOField
-A classe `DTOField` representa uma propriedade de um objeto DTO e define várias configurações para essa propriedade, como tipo esperado, validações, formatações, entre outras. As validações personalizadas são acessadas em [DTOFieldValidators](src/nsj_rest_lib/descriptor/dto_field_validators.py). A classe `DTOFieldFilter` representa um filtro que pode ser aplicado a uma propriedade DTO para consultas.
+A classe `DTOField` representa uma propriedade de um objeto DTO e define várias configurações para essa propriedade, como tipo esperado, validações, formatações, entre outras. As validações personalizadas são acessadas em [DTOFieldValidators](src/rest_lib/descriptor/dto_field_validators.py). A classe `DTOFieldFilter` representa um filtro que pode ser aplicado a uma propriedade DTO para consultas.
 
 ## Parâmetros:
 - `type [object = None]`: Tipo esperado para a propriedade. Se for do tipo enum.Enum, o valor recebido será convertido para o enumerado.
@@ -25,8 +25,8 @@ A classe `DTOField` representa uma propriedade de um objeto DTO e define várias
 
 **Exemplo:**
 ```
-from nsj_rest_lib.descriptor.dto_field import DTOField, DTOFieldFilter
-from nsj_rest_lib.descriptor.dto_field_validators import DTOFieldValidators
+from rest_lib.descriptor.dto_field import DTOField, DTOFieldFilter
+from rest_lib.descriptor.dto_field_validators import DTOFieldValidators
 
 cliente: str = DTOField(resume=True, not_null=True, strip=True, min=11, max=60, 
     validator=DTOFieldValidators().validate_cpf_or_cnpj)

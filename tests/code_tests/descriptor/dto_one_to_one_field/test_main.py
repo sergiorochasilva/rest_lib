@@ -1,23 +1,23 @@
 import uuid
 import typing as ty
 
-from nsj_rest_lib.decorator.dto import DTO  # type: ignore
-from nsj_rest_lib.descriptor.dto_field import DTOField  # type: ignore
-from nsj_rest_lib.descriptor.dto_list_field import DTOListField  # type: ignore
-from nsj_rest_lib.descriptor.dto_one_to_one_field import (  # type: ignore
+from rest_lib.decorator.dto import DTO  # type: ignore
+from rest_lib.descriptor.dto_field import DTOField  # type: ignore
+from rest_lib.descriptor.dto_list_field import DTOListField  # type: ignore
+from rest_lib.descriptor.dto_one_to_one_field import (  # type: ignore
     DTOOneToOneField,
     OTORelationType,
 )
-from nsj_rest_lib.descriptor.dto_left_join_field import EntityRelationOwner  # type: ignore
+from rest_lib.descriptor.dto_left_join_field import EntityRelationOwner  # type: ignore
 
-from nsj_rest_lib.dto.dto_base import DTOBase  # type: ignore
+from rest_lib.dto.dto_base import DTOBase  # type: ignore
 
-from nsj_rest_lib.decorator.entity import Entity  # type: ignore
-from nsj_rest_lib.entity.entity_base import EntityBase  # type: ignore
+from rest_lib.decorator.entity import Entity  # type: ignore
+from rest_lib.entity.entity_base import EntityBase  # type: ignore
 
-from nsj_rest_lib.dao.dao_base import DAOBase  # type: ignore
-from nsj_rest_lib.exception import NotFoundException  # type: ignore
-from nsj_rest_lib.service.service_base import ServiceBase  # type: ignore
+from rest_lib.dao.dao_base import DAOBase  # type: ignore
+from rest_lib.exception import NotFoundException  # type: ignore
+from rest_lib.service.service_base import ServiceBase  # type: ignore
 
 
 @Entity(table_name="child_entity", pk_field="a", default_order_fields=["a"])

@@ -1,12 +1,12 @@
 from tests.cliente_dto import ClienteDTO
 from tests.cliente_entity import ClienteEntity
-from nsj_rest_lib.settings import application, APP_NAME, MOPE_CODE
+from rest_lib.settings import application, APP_NAME, MOPE_CODE
 
-from nsj_rest_lib.controller.get_route import GetRoute
-from nsj_rest_lib.controller.list_route import ListRoute
-from nsj_rest_lib.controller.post_route import PostRoute
-from nsj_rest_lib.controller.put_route import PutRoute
-from nsj_rest_lib.controller.delete_route import DeleteRoute
+from rest_lib.controller.get_route import GetRoute
+from rest_lib.controller.list_route import ListRoute
+from rest_lib.controller.post_route import PostRoute
+from rest_lib.controller.put_route import PutRoute
+from rest_lib.controller.delete_route import DeleteRoute
 
 LIST_POST_ROUTE = f'/{APP_NAME}/{MOPE_CODE}/clientes'
 GET_PUT_ROUTE = f'/{APP_NAME}/{MOPE_CODE}/clientes/<id>'

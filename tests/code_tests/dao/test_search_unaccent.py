@@ -1,9 +1,9 @@
 from unittest.mock import Mock
 
-from nsj_rest_lib.dao.dao_base_search import DAOBaseSearch  # type: ignore
-from nsj_rest_lib.decorator.entity import Entity  # type: ignore
-from nsj_rest_lib.descriptor.entity_field import EntityField  # type: ignore
-from nsj_rest_lib.entity.entity_base import EntityBase  # type: ignore
+from rest_lib.dao.dao_base_search import DAOBaseSearch  # type: ignore
+from rest_lib.decorator.entity import Entity  # type: ignore
+from rest_lib.descriptor.entity_field import EntityField  # type: ignore
+from rest_lib.entity.entity_base import EntityBase  # type: ignore
 
 
 @Entity(table_name="test.table", pk_field="id", default_order_fields=["id"])

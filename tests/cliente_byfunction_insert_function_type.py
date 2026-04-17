@@ -1,7 +1,7 @@
-from nsj_rest_lib.decorator.insert_function_type import InsertFunctionType
-from nsj_rest_lib.descriptor.function_field import FunctionField
-from nsj_rest_lib.descriptor.function_relation_field import FunctionRelationField
-from nsj_rest_lib.entity.function_type_base import InsertFunctionTypeBase
+from rest_lib.decorator.insert_function_type import InsertFunctionType
+from rest_lib.descriptor.function_field import FunctionField
+from rest_lib.descriptor.function_relation_field import FunctionRelationField
+from rest_lib.entity.function_type_base import InsertFunctionTypeBase
 
 
 @InsertFunctionType(

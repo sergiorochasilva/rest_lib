@@ -1,4 +1,4 @@
-# [DAO](src/nsj_rest_lib/dao/dao_base.py)
+# [DAO](src/rest_lib/dao/dao_base.py)
 
 `DAOBase` é uma classe genérica que serve como um Data Access Object (DAO) para simplificar o processo de interação com o banco de dados.
 

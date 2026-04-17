@@ -1,12 +1,12 @@
 import uuid
 
-from nsj_rest_lib.decorator.insert_function_type import InsertFunctionType
-from nsj_rest_lib.decorator.update_function_type import UpdateFunctionType
-from nsj_rest_lib.decorator.list_function_type import ListFunctionType
-from nsj_rest_lib.decorator.get_function_type import GetFunctionType
-from nsj_rest_lib.decorator.delete_function_type import DeleteFunctionType
-from nsj_rest_lib.descriptor.function_field import FunctionField
-from nsj_rest_lib.entity.function_type_base import (
+from rest_lib.decorator.insert_function_type import InsertFunctionType
+from rest_lib.decorator.update_function_type import UpdateFunctionType
+from rest_lib.decorator.list_function_type import ListFunctionType
+from rest_lib.decorator.get_function_type import GetFunctionType
+from rest_lib.decorator.delete_function_type import DeleteFunctionType
+from rest_lib.descriptor.function_field import FunctionField
+from rest_lib.entity.function_type_base import (
     InsertFunctionTypeBase,
     UpdateFunctionTypeBase,
     ListFunctionTypeBase,

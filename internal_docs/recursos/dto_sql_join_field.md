@@ -11,7 +11,7 @@ _Obs.: Por hora, a query gerada não considera os campos de particinamento no jo
 Segue exemplo simples onde se deseja pegar o campo "id" do Grupo Empresarial (que nesse caso é o Código), e trazê-lo para o DTO corrente:
 
 ```py
-from nsj_rest_lib.descriptor.dto_sql_join_field import DTOSQLJoinField, DTOJoinFieldType
+from rest_lib.descriptor.dto_sql_join_field import DTOSQLJoinField, DTOJoinFieldType
 
 grupo_empresarial: str = DTOSQLJoinField(
     dto_type=GrupoEmpresarialERP3DTO,

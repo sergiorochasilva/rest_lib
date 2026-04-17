@@ -2,27 +2,27 @@ import enum
 import uuid
 
 from flask import Flask
-from nsj_rest_lib.dao.dao_base_save_by_function import DAOBaseSaveByFunction
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.decorator.entity import Entity
-from nsj_rest_lib.decorator.insert_function_type import InsertFunctionType
-from nsj_rest_lib.decorator.update_function_type import UpdateFunctionType
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.descriptor.dto_list_field import DTOListField
-from nsj_rest_lib.descriptor.dto_one_to_one_field import (
+from rest_lib.dao.dao_base_save_by_function import DAOBaseSaveByFunction
+from rest_lib.decorator.dto import DTO
+from rest_lib.decorator.entity import Entity
+from rest_lib.decorator.insert_function_type import InsertFunctionType
+from rest_lib.decorator.update_function_type import UpdateFunctionType
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.descriptor.dto_list_field import DTOListField
+from rest_lib.descriptor.dto_one_to_one_field import (
     DTOOneToOneField,
     OTORelationType,
 )
-from nsj_rest_lib.descriptor.function_relation_field import FunctionRelationField
-from nsj_rest_lib.descriptor.entity_field import EntityField
-from nsj_rest_lib.descriptor.function_field import FunctionField
-from nsj_rest_lib.dto.dto_base import DTOBase
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.entity.function_type_base import (
+from rest_lib.descriptor.function_relation_field import FunctionRelationField
+from rest_lib.descriptor.entity_field import EntityField
+from rest_lib.descriptor.function_field import FunctionField
+from rest_lib.dto.dto_base import DTOBase
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.entity.function_type_base import (
     InsertFunctionTypeBase,
     UpdateFunctionTypeBase,
 )
-from nsj_rest_lib.service.service_base import ServiceBase
+from rest_lib.service.service_base import ServiceBase
 
 
 @DTO()

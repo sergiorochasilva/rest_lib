@@ -1,14 +1,14 @@
 import uuid
 
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.decorator.entity import Entity
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.descriptor.entity_field import EntityField
-from nsj_rest_lib.service.service_base import ServiceBase
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.entity.function_type_base import ListFunctionTypeBase
-from nsj_rest_lib.decorator.list_function_type import ListFunctionType
-from nsj_rest_lib.descriptor.function_field import FunctionField
+from rest_lib.decorator.dto import DTO
+from rest_lib.decorator.entity import Entity
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.descriptor.entity_field import EntityField
+from rest_lib.service.service_base import ServiceBase
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.entity.function_type_base import ListFunctionTypeBase
+from rest_lib.decorator.list_function_type import ListFunctionType
+from rest_lib.descriptor.function_field import FunctionField
 
 
 class FakeDAO:
@@ -53,7 +53,7 @@ class FakeInjector:
         return None
 
 
-from nsj_rest_lib.dto.dto_base import DTOBase
+from rest_lib.dto.dto_base import DTOBase
 
 
 @DTO()

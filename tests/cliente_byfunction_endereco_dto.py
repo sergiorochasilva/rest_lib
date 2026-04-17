@@ -1,8 +1,8 @@
 import uuid
 
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.dto.dto_base import DTOBase
+from rest_lib.decorator.dto import DTO
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.dto.dto_base import DTOBase
 
 
 @DTO()

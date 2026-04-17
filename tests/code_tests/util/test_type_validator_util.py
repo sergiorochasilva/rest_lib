@@ -2,7 +2,7 @@ from types import SimpleNamespace
 
 from dateutil.relativedelta import relativedelta
 
-from nsj_rest_lib.util.type_validator_util import TypeValidatorUtil
+from rest_lib.util.type_validator_util import TypeValidatorUtil
 
 
 def _duration_field():

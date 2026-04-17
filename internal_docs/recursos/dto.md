@@ -1,4 +1,4 @@
-# [DTO](src/nsj_rest_lib/dto/dto_base.py)
+# [DTO](src/rest_lib/dto/dto_base.py)
 `DTOBase` é uma classe abstrata que representa um Data Transfer Object (DTO) usado para transferir dados entre a camada de apresentação e a camada de serviço de uma aplicação. É especialmente útil em operações onde uma entidade de banco de dados precisa ser convertida em um formato adequado para interações com a interface do usuário.
 
 ## Atributos:

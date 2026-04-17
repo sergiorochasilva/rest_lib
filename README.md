@@ -1,4 +1,4 @@
-# RestLib (nsj_rest_lib)
+# RestLib (rest_lib)
 
 ## QuickStart
 
@@ -178,7 +178,7 @@ E em torno na rota ficaria: `/pai/<id_pai>/filho/<id>`
 
 ### 6.3.0
 
-- Implementação do suporte a auditoria nativa (ver projeto [nsj-audit-lib](https://github.com/Nasajon/nsj-audit-lib)).
+- Implementação do suporte a auditoria nativa.
 
 ### 6.2.0
 
@@ -261,7 +261,7 @@ E em torno na rota ficaria: `/pai/<id_pai>/filho/<id>`
     - Se houver um DTO de retorno, então o retorno do custom_after é ignorado.
     - Se não, o retorno do custom_after é retornado como recebido.
 - Suporte a notificações de enfileiramento a partir do custom_after_insert ou custom_after_update
-  - Se o retorno de um desses métodos for um objeto do tipo nsj_rest_lib.dto.queued_data_dto.QueuedDataDTO, a requisição de POST, PUT ou PATCH irá retornar um HTTP 202, com um location (de acordo com a URL escrita no objeto), para notificar como acompanhar o resultado do enfileiramento.
+  - Se o retorno de um desses métodos for um objeto do tipo rest_lib.dto.queued_data_dto.QueuedDataDTO, a requisição de POST, PUT ou PATCH irá retornar um HTTP 202, com um location (de acordo com a URL escrita no objeto), para notificar como acompanhar o resultado do enfileiramento.
 
 ### 4.12.0
 

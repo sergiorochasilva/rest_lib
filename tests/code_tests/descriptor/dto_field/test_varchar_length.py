@@ -1,14 +1,14 @@
 import re
 
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.descriptor.dto_field import DTOField, DTOFieldFilter, FilterOperator
-from nsj_rest_lib.dto.dto_base import DTOBase
+from rest_lib.decorator.dto import DTO
+from rest_lib.descriptor.dto_field import DTOField, DTOFieldFilter, FilterOperator
+from rest_lib.dto.dto_base import DTOBase
 
-from nsj_rest_lib.decorator.entity import Entity
+from rest_lib.decorator.entity import Entity
 
-from nsj_rest_lib.dao.dao_base import DAOBase
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.service.service_base import ServiceBase
+from rest_lib.dao.dao_base import DAOBase
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.service.service_base import ServiceBase
 
 
 @DTO()

@@ -11,9 +11,9 @@ for path in (SRC_ROOT, REPO_ROOT):
         sys.path.insert(0, str(path))
 
 
-from nsj_rest_lib.controller.route_base import RouteBase
-from nsj_rest_lib.dto.dto_base import DTOBase
-from nsj_rest_lib.exception import MissingParameterException
+from rest_lib.controller.route_base import RouteBase
+from rest_lib.dto.dto_base import DTOBase
+from rest_lib.exception import MissingParameterException
 
 
 class DummyDTO(DTOBase):

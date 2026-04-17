@@ -11,7 +11,7 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "src/nsj_rest_lib/wsgi.py",
+                "FLASK_APP": "src/rest_lib/wsgi.py",
                 "FLASK_DEBUG": "1"
             },
             "args": [

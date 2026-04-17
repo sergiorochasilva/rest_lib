@@ -1,19 +1,19 @@
 from unittest.mock import Mock
 
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.decorator.entity import Entity
-from nsj_rest_lib.decorator.update_function_type import UpdateFunctionType
-from nsj_rest_lib.descriptor.dto_aggregator import DTOAggregator
-from nsj_rest_lib.descriptor.dto_field import DTOField
-from nsj_rest_lib.descriptor.dto_list_field import DTOListField
-from nsj_rest_lib.descriptor.function_field import FunctionField
-from nsj_rest_lib.descriptor.function_relation_field import FunctionRelationField
-from nsj_rest_lib.dto.dto_base import DTOBase
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.entity.function_type_base import UpdateFunctionTypeBase
-from nsj_rest_lib.service.service_base import ServiceBase
-from nsj_rest_lib.exception import NotFoundException
-from nsj_rest_lib.settings import ENV_MULTIDB
+from rest_lib.decorator.dto import DTO
+from rest_lib.decorator.entity import Entity
+from rest_lib.decorator.update_function_type import UpdateFunctionType
+from rest_lib.descriptor.dto_aggregator import DTOAggregator
+from rest_lib.descriptor.dto_field import DTOField
+from rest_lib.descriptor.dto_list_field import DTOListField
+from rest_lib.descriptor.function_field import FunctionField
+from rest_lib.descriptor.function_relation_field import FunctionRelationField
+from rest_lib.dto.dto_base import DTOBase
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.entity.function_type_base import UpdateFunctionTypeBase
+from rest_lib.service.service_base import ServiceBase
+from rest_lib.exception import NotFoundException
+from rest_lib.settings import ENV_MULTIDB
 
 
 @Entity(

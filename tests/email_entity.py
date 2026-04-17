@@ -2,8 +2,8 @@ import datetime
 
 from typing import List
 
-from nsj_rest_lib.decorator.entity import Entity
-from nsj_rest_lib.entity.entity_base import EntityBase
+from rest_lib.decorator.entity import Entity
+from rest_lib.entity.entity_base import EntityBase
 
 @Entity(
     table_name="teste.email",

@@ -8,14 +8,14 @@ from unittest.mock import Mock #, patch, MagicMock
 import pytest
 
 
-from nsj_rest_lib.service.service_base import ServiceBase
-from nsj_rest_lib.descriptor.dto_object_field import DTOObjectField, EntityRelationOwner
-from nsj_rest_lib.dto.dto_base import DTOBase
-from nsj_rest_lib.entity.entity_base import EntityBase
-from nsj_rest_lib.exception import DTOListFieldConfigException
-from nsj_rest_lib.decorator.dto import DTO
-from nsj_rest_lib.decorator.entity import Entity
-from nsj_rest_lib.descriptor.dto_field import DTOField
+from rest_lib.service.service_base import ServiceBase
+from rest_lib.descriptor.dto_object_field import DTOObjectField, EntityRelationOwner
+from rest_lib.dto.dto_base import DTOBase
+from rest_lib.entity.entity_base import EntityBase
+from rest_lib.exception import DTOListFieldConfigException
+from rest_lib.decorator.dto import DTO
+from rest_lib.decorator.entity import Entity
+from rest_lib.descriptor.dto_field import DTOField
 
 @Entity(
     table_name="mock_table",
