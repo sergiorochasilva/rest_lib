@@ -4,7 +4,7 @@ services:
     postgres:
         image: postgres:11.5
         ports:
-            - "5440:5432"
+            - "5760:5432"
         restart: always
         volumes:
             - $PWD/tests/database/dump:/docker-entrypoint-initdb.d/

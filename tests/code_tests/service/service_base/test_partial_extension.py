@@ -236,11 +236,17 @@ def test_partial_order_field_triggers_join_and_alias():
     assert kwargs.get("partial_exists_clause") is None
 
     order_specs = args[3]
-    assert len(order_specs) == 1
+    assert len(order_specs) == 2
+
     spec = order_specs[0]
     assert spec.source.name == "PARTIAL_EXTENSION"
     assert spec.column == "registro_anvisa"
     assert spec.is_desc is True
+
+    pk_spec = order_specs[1]
+    assert pk_spec.source.name == "BASE"
+    assert pk_spec.column == "id"
+    assert pk_spec.is_desc is False
 
 
 def test_partial_insert_saves_extension_record():

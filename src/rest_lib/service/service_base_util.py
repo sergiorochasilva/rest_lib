@@ -784,10 +784,6 @@ class ServiceBaseUtil:
                                 field_filter.operator,
                                 converted_value,
                                 table_alias,
-                                relation_mode="exists",
-                                relation_table=one_to_one_entity_class().get_table_name(),
-                                relation_parent_field=relation_parent_field,
-                                relation_child_field=relation_child_field,
                             )
                         elif is_sql_join_filter:
                             entity_filter = Filter(

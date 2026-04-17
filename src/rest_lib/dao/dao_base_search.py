@@ -165,7 +165,7 @@ class DAOBaseSearch(DAOBaseConjuntos):
                         except Exception:
                             continue
 
-                        key = f"shf_{idx}_{safe_field_name}_{cont}"
+                        key = f"shf_{safe_field_name}_{cont}"
                         raw_condition = f"{field_ref} = :{key}"
                         search_conditions.append(
                             self._wrap_search_condition(raw_condition, spec)
@@ -183,8 +183,8 @@ class DAOBaseSearch(DAOBaseConjuntos):
                         valor_min = int(valor * 0.9)
                         valor_max = int(valor * 1.1)
 
-                        key_min = f"shf_{idx}_{safe_field_name}_{cont}_min"
-                        key_max = f"shf_{idx}_{safe_field_name}_{cont}_max"
+                        key_min = f"shf_{safe_field_name}_{cont}_min"
+                        key_max = f"shf_{safe_field_name}_{cont}_max"
                         raw_condition = (
                             f"({field_ref} >= :{key_min} and {field_ref} <= :{key_max})"
                         )
@@ -205,8 +205,8 @@ class DAOBaseSearch(DAOBaseConjuntos):
                         valor_min = valor * 0.9
                         valor_max = valor * 1.1
 
-                        key_min = f"shf_{idx}_{safe_field_name}_{cont}_min"
-                        key_max = f"shf_{idx}_{safe_field_name}_{cont}_max"
+                        key_min = f"shf_{safe_field_name}_{cont}_min"
+                        key_max = f"shf_{safe_field_name}_{cont}_max"
                         raw_condition = (
                             f"({field_ref} >= :{key_min} and {field_ref} <= :{key_max})"
                         )
@@ -223,9 +223,10 @@ class DAOBaseSearch(DAOBaseConjuntos):
                             continue
 
                         cont += 1
-                        key = f"shf_{idx}_{safe_field_name}_{cont}"
+                        key = f"shf_{safe_field_name}_{cont}"
                         raw_condition = (
-                            f"LOWER(CONCAT({field_ref}, '')) like LOWER(:{key})"
+                            f"upper(unaccent(CAST({field_ref} AS varchar))) "
+                            f"like upper(unaccent(:{key}))"
                         )
                         search_conditions.append(
                             self._wrap_search_condition(raw_condition, spec)

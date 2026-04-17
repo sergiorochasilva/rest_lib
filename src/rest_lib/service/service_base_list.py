@@ -380,7 +380,6 @@ class ServiceBaseList(ServiceBaseRetrieve):
                         alias=None,
                     )
                 )
-
         # Tratando dos filtros
         all_filters = {}
         if self._dto_class.fixed_filters is not None:

@@ -76,6 +76,20 @@ class DAOBaseList(DAOBaseSearch):
                 )
             )
 
+        pk_field = entity.get_pk_field()
+        if pk_field is not None and not any(
+            spec.column == pk_field and spec.alias is None
+            for spec in order_specs
+        ):
+            order_specs.append(
+                OrderFieldSpec(
+                    column=pk_field,
+                    is_desc=False,
+                    source=OrderFieldSource.BASE,
+                    alias=None,
+                )
+            )
+
         sql_order_items: List[Tuple[str, str, bool, str]] = []
         order_fields_alias: List[str] = []
         for spec in order_specs:
